@@ -25,7 +25,7 @@ This is a Flask-based web application designed to simulate stock trading. Users 
 3. ```bash
    cd stock-trading-app
 
-4. Install the required packages:
+4. Install the required packages: Download the 'requirements.txt' file and then run the following command in terminal
 5. ```bash
    pip install -r requirements.txt
 
