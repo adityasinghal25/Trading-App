@@ -6,7 +6,7 @@ This is a Flask-based web application designed to simulate stock trading. Users 
 ## Features
 - **User Authentication:** Secure sign-up and login functionality.
 - **Stock Trading:** Buy and sell stocks, manage your portfolio.
-- **Real-time Data:** Fetches real-time stock data using a public API.
+- **Real-time Graphical Data:** Fetches real-time stock data using a public API for showing Trends.
 - **Admin Panel:** Admins can manage users and stocks, and handle user queries.
 - **User Testing:** Conducted with a group of 10 participants for feedback and improvements.
 
