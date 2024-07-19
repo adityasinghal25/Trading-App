@@ -22,18 +22,22 @@ This is a Flask-based web application designed to simulate stock trading. Users 
    git clone https://github.com/yourusername/stock-trading-app.git
 
 2. Navigate to the project directory:
+3. ```bash
    cd stock-trading-app
 
-3. Install the required packages:
+4. Install the required packages:
+5. ```bash
    pip install -r requirements.txt
 
-4. Setup Database:
+6. Setup Database:
+7. ```bash
    python setup_db.py
 
-5. Run the Application
+8. Run the Application
+9. ```bash
    python app.py
 
-6. Open your browser and go to http://127.0.0.1:5000 to access the app.
+10. Open your browser and go to http://127.0.0.1:5000 to access the app.
 
 ## Usage
 - **Home Page:** The main landing page.
