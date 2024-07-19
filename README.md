@@ -50,6 +50,7 @@ This is a Flask-based web application designed to simulate stock trading. Users 
 
 
 ## Project Structure 
+```
 stock-trading-app/
 │
 ├── app.py                    # Main application file
