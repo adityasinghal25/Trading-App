@@ -1,0 +1,42 @@
+{% block title %}
+<title>Add Company form</title>
+{% endblock %}
+{% extends "adminlogin.html" %}
+{% block body %}
+<h1>Add Company</h1>
+<div>
+   <form action="/companycomplete" method="post">
+      <div style="display: flex;">
+         <div>
+            Company Id:&nbsp;<input type="text" name="c_id"><br>
+            <br>
+            Company Name:&nbsp;<input type="text" name="c_name"><br>
+            <br>
+            Company Symbol:&nbsp;<input type="text" name="c_symbol"><br>
+            <br>
+            Company Address:&nbsp;<input type="text" size="40" name="c_address"><br>
+            <br>
+            Company PhoneNo:&nbsp;<input type="text" name="c_phoneno"><br>
+            <br>
+            Company FaxNo:&nbsp;<input type="text" name="c_faxno"><br>
+            <br>
+         </div>
+         <div style="margin-left: 30px;">
+            Company City:&nbsp;<input type="text" name="c_city"><br>
+            <br>
+            Company Profile:&nbsp;<input type="text" name="c_profile"><br>
+            <br>
+            Company TurnOver (in Rupees):&nbsp;<input type="text" name="c_turnover"><br>
+            <br>
+            Company Type:&nbsp;<input type="text" name="c_type"><br>
+            <br>
+            Company Username:&nbsp;<input type="text" name="c_username"><br>
+            <br>
+            Company Password:&nbsp;<input type="password" name="c_password"><br>
+            <br>
+         </div>
+      </div>
+      <button type="submit" class="btn btn-info">Add Company</button>
+   </form>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% block title %}
+<title>User Feedback</title>
+{% endblock %}
+{% extends "userlogin.html" %}
+{% block body %}
+<h1>Send Feedback</h1><br>
+<form action="/feedbacksent" method="post">
+    <label style="font-style: italic;">To Admin,</label><br><br>
+    <textarea rows="5" cols="30" name="feedback" style="margin-left: 75px;"></textarea><br><br>
+    <input type="submit" value="Send" style="margin-left: 75px;" class="btn btn-info">
+</form>
+{% endblock %}

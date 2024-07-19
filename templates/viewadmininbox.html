@@ -1,0 +1,32 @@
+{% block title %}
+<title>Admin Inbox</title>
+{% endblock %}
+{% extends "adminlogin.html" %}
+{% block body %}
+<h1 style="text-align: center;">Admin Inbox</h1>
+<table style="width: 1000px;" class="table table-striped table-bordered">
+    <tr style="text-align: center;">
+        <th>SNo.</th>
+        <th>From</th>
+        <th>Feedback</th>
+        <th colspan="2">Action</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>
+            <form action="/userquery" method="post"><input type="hidden" name="id" value="{{ row[0] }}"><input
+                    type="submit" value="Resolve" class="btn btn-success"></form>
+        </td>
+        <td>
+            <form action="/userquery" method="post">
+                <input type="hidden" name="id" value="{{ row[0] }}">
+                <input type="submit" value="Reject" class="btn btn-danger">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

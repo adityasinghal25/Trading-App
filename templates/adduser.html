@@ -1,0 +1,25 @@
+{% block title %}
+<title>Add user form</title>
+{% endblock %}
+{% extends "adminlogin.html" %}
+{% block body %}
+<h1>Add Users</h1>
+<div>
+    <form action="/usercomplete" method="post">
+        Username:&nbsp;<input type="text" name="au_username"><br>
+        <br>
+        Email:&nbsp;<input type="email" name="au_email"><br>
+        <br>
+        Password:&nbsp;<input type="password" name="au_password"><br>
+        <br>
+        Type:&nbsp;<input type="text" name="au_type"><br>
+        <br>
+        Address:&nbsp;<input type="text" size="40" name="au_address"><br>
+        <br>
+        Phone No:&nbsp;<input type="text" name="au_phoneno"><br>
+        <br>
+        <button type="submit" class="btn btn-info">Add User</button>
+    </form>
+</div>
+
+{% endblock %}

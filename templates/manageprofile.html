@@ -1,0 +1,17 @@
+{% extends "userlogin.html" %}
+{% block body %}
+<h1>Manage Profile</h1>
+{% for row in rows %}
+<form action="/managecomplete" method="post">
+    <input type="hidden" name="userid" value="{{userid}}">
+    Username         : {{ Username1 }} <br><br>
+    Email            : <input type="email" value="{{ row[2] }}" name="newemail"><br><br>
+    Account Type     : {{ row[4] }}<br><br>
+    Address          : <input type="text" value="{{ row[5] }}" name="newaddress"><br><br>
+    Phone No         : <input type="text" value="{{ row[6] }}" name="newphoneno"><br><br>
+    Funds in Account : <b>Rs {{ row[7] }}</b><br><br>
+    <input type="submit" value="Update Profile" class="btn btn-danger">
+</form><br>
+{% endfor %}
+{% endblock %}
+<b style="color: red;">{{msg}}</b>

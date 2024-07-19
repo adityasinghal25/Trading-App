@@ -1,0 +1,31 @@
+{% block title %}
+<title>Log-in Page</title>
+{% endblock %}
+{% extends 'index.html' %}
+{% block body %}
+<form action="/logcomplete" method="post">
+  <div
+    style="width: 300px;height: 400px; background-color: whitesmoke;text-align: center;margin: auto;margin-top: 100px;">
+    <br>
+    <h2 class="text-info">User Log-in</h2><br>
+    Enter Username<br><input type="text" name="Username1" placeholder="Username"><br>
+    <br>
+    Enter Password<br><input type="password" name="Password1" placeholder="Password"><br>
+    <br><br>
+    <button type="submit" class="btn btn-info">Sign Up</button>
+  </div>
+</form>
+{{msg}}
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-info fixed-bottom">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span style="color: white;" class="mb-3 mb-md-0 text-body-white">© 2024 Company, Inc</span>
+    </div>
+  </footer>
+</div>
+{% endblock %}

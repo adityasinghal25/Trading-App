@@ -1,0 +1,25 @@
+{% block title %}
+<title>Send Tip</title>
+{% endblock %}
+{% extends "adminlogin.html" %}
+{% block body %}
+<h1>Send Messages to Users</h1>
+<div>
+    <br>
+    <form action="/tipsent" method="post">
+        Select User: <select style="width: 120px;" name="selected_user">
+            <option value="">Select</option>
+            {% for Customer in Customers %}
+            <option value="{{ Customer }}">{{ Customer }}</option>
+            {% endfor %}
+            <option value="all">All users</option>
+        </select><br>
+        <br>
+        <label style="font-style: italic;">Send Tip:</label><br>
+        <br>
+        <textarea rows="5" cols="30" name="tip" style="margin-left: 75px;"></textarea><br>
+        <br>
+        <input type="submit" value="Send" style="margin-left: 75px;" class="btn btn-info">
+    </form>
+</div>
+{% endblock %}

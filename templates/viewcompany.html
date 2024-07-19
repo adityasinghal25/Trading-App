@@ -1,0 +1,38 @@
+{% block title %}
+<title>Companies</title>
+{% endblock %}
+{% extends "userlogin.html" %}
+{% block body %}
+<h1 style="text-align: center;">Registered Companies on Market</h1>
+<table style="width: 1200px;" class="table table-striped table-bordered">
+    <tr style="text-align: center;">
+        <th>SNo.</th>
+        <th>Company Id</th>
+        <th>Company Name</th>
+        <th>Company Address</th>
+        <th>Company PhoneNo</th>
+        <th>Company FaxNo</th>
+        <th>Company City</th>
+        <th>Company Profile</th>
+        <th>Company TurnOver</th>
+        <th>Company Type</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+        <td>{{ row[5] }}</td>
+        <td>{{ row[6] }}</td>
+        <td>{{ row[7] }}</td>
+        <td>Rs {{ row[8] }}</td>
+        <td>{{ row[9] }}</td>
+        <!-- <td><form action="/edit" method="post"><input type="hidden" name="id" value="{{ row[0] }}"><input type="submit" value="Edit"></form></td>
+        <td><form action="/deleterec" method="post" onsubmit="return confirm('Are you sure you want to delete this data entry from the database?')"><input type="hidden" name="id" value="{{ row[0] }}"><input type="submit" value="Delete"></form>
+        </td> -->
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% block title %}
+<title>Add Shares form</title>
+{% endblock %}
+{% extends "adminlogin.html" %}
+{% block body %}
+<h1>Add Shares</h1>
+<div>
+    <br>
+    <form action="/sharecomplete" method="post">
+        Company Name: <select style="width: 120px;" name="company_name">
+            <option value="">Select</option>
+            {% for company in Companies %}
+            <option value="{{ company }}">{{ company }}</option>
+            {% endfor %}
+        </select><br>
+        <br>
+        Shares Id:&nbsp;<input type="text" name="shares_id"><br>
+        <br>
+        Company Type:&nbsp;<input type="text" name="company_type"><br>
+        <br>
+        Share Description:&nbsp;<input type="text" name="description"><br>
+        <br>
+        Total Shares:&nbsp;<input type="text" name="total"><br>
+        <br>
+        Shares Sold:&nbsp;<input type="text" name="sold"><br>
+        <br>
+        Shares Left:&nbsp;<input type="text" name="left"><br>
+        <br>
+        Start NAV:&nbsp;<input type="text" name="nav"><br>
+        <br>
+        <button type="submit" class="btn btn-info">Add Share</button>
+    </form>
+</div>
+{% endblock %}
