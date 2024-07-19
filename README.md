@@ -16,7 +16,7 @@ This is a Flask-based web application designed to simulate stock trading. Users 
 - **Data Visualization:** Matplotlib
 - **Other Libraries:** Requests, Pytz
 
-## Setup Instructions (Run in terminal)
+## Setup Instructions **(Run in terminal)
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/stock-trading-app.git
