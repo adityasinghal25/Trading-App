@@ -3,7 +3,7 @@
 <h1 style="text-align: center;">Edit User Record</h1>
 {% for row in rows %}
 <form action="/editrec" method="POST">
-    <h3>Currently Editing User table with id={{ row[0] }}</h3>
+    <br>
     <input type="hidden" name="id" value="{{ row[0] }}">
     Username:&nbsp;<input type="text" name="au_username" value="{{ row[1] }}"><br>
     <br>
