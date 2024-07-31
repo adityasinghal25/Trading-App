@@ -29,9 +29,9 @@ This is a Flask-based web application designed to simulate stock trading. Users 
     ```bash
    pip install -r requirements.txt
 
-4. Setup Database:
+4. Setup BootStrap on your system:
    ```bash
-   python setup_db.py
+     https://getbootstrap.com/docs/5.3/getting-started/download/
 
 5. Run the Application
    ```bash
