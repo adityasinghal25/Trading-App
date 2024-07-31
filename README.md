@@ -32,6 +32,7 @@ This is a Flask-based web application designed to simulate stock trading. Users 
 4. Setup BootStrap on your system:
    ```bash
      https://getbootstrap.com/docs/5.3/getting-started/download/
+After installing Bootstrap transfer the bootstrap.min.css file into Static Folder of the Project Directory.
 
 5. Run the Application
    ```bash
