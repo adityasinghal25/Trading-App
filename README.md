@@ -1,6 +1,5 @@
 # Web-Based Stock Trading Application 
 
-## Overview
 This is a Flask-based web application designed to simulate stock trading. Users can sign up, log in, and manage their stock portfolios by buying and selling stocks. The app provides real-time stock data, user authentication, and session management.
 
 ## Features
